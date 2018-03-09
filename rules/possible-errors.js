@@ -1,5 +1,7 @@
 // https://eslint.org/docs/rules/#possible-errors
 
+/* eslint-disable no-undef */
+
 module.exports = {
 
   rules: {
@@ -113,3 +115,5 @@ module.exports = {
     'valid-typeof': ['error', { requireStringLiterals: true }],
   }
 };
+
+/* eslint-enable no-undef */

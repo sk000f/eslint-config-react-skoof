@@ -1,5 +1,7 @@
 // https://eslint.org/docs/rules/#variables
 
+/* eslint-disable no-undef */
+
 module.exports = {
 
   rules: {
@@ -41,3 +43,5 @@ module.exports = {
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
   }
 };
+
+/* eslint-enable no-undef */
