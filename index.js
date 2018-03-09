@@ -11,6 +11,7 @@ module.exports = {
     './rules/stylistic-issues',
     './rules/ECMAScript-6',
     './rules/react',
+    './rules/react-jsx',
     './rules/react-a11y'
   ].map(require.resolve),
   parserOptions: {
