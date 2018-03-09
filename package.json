@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-mikeskaife",
+  "name": "eslint-config-react-skoof",
   "version": "1.0.0",
   "description": "ESLint Shareable Config for JavaScript and React",
   "author": "Mike Skaife <mike@skaife.me>",
@@ -11,13 +11,13 @@
     }
   ],
   "license": "MIT",
-  "homepage": "https://github.com/mikeskaife/eslint-config-mikeskaife#readme",
+  "homepage": "https://github.com/mikeskaife/eslint-config-react-skoof#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikeskaife/eslint-config-mikeskaife.git"
+    "url": "git+https://github.com/mikeskaife/eslint-config-react-skoof.git"
   },
   "bugs": {
-    "url": "https://github.com/mikeskaife/eslint-config-mikeskaife/issues"
+    "url": "https://github.com/mikeskaife/eslint-config-react-skoof/issues"
   },
   "main": "index.js",
   "scripts": {

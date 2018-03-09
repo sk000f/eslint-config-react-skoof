@@ -1,4 +1,4 @@
-# eslint-config-mikeskaife
+# eslint-config-react-skoof
 ESLint Shareable Config for JavaScript and React
 
 Currently targets the following:
