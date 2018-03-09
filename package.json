@@ -1,0 +1,20 @@
+{
+  "name": "eslint-config-mikeskaife",
+  "version": "1.0.0",
+  "description": "ESLint Shareable Config for JavaScript and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeskaife/eslint-config-mikeskaife.git"
+  },
+  "author": "Mike Skaife <mike@skaife.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeskaife/eslint-config-mikeskaife/issues"
+  },
+  "homepage": "https://github.com/mikeskaife/eslint-config-mikeskaife#readme",
+  "devDependencies": {}
+}
