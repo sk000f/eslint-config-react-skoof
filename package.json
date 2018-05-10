@@ -23,17 +23,20 @@
   "scripts": {
     "lint": "eslint .",
     "lint:verbose": "DEBUG=eslint:cli-engine eslint .",
-    "test": "mocha --require babel-core/register ./tests/**/*.test.js"
+    "test": "mocha --require babel-core/register ./tests/**/*.test.js",
+    "cover": "istanbul cover --dir ./coverage _mocha -- --compilers js:babel-core/register --colors -R spec ./tests/**/*.test.js"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-preset-es2015": "6.24.1",
     "chai": "4.1.2",
+    "coveralls": "^3.0.1",
     "eslint": "4.18.2",
     "eslint-find-rules": "3.2.1",
     "eslint-plugin-import": "2.9.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.7.0",
+    "istanbul": "1.1.0-alpha.1",
     "mocha": "5.0.4"
   },
   "peerDependencies": {
