@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let bestPracticesRules;
 
 describe('best practices rules', () => {
-
   before(() => {
     bestPracticesRules = require('../rules/best-practices');
   });

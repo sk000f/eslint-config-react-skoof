@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let reactRules;
 
 describe('react rules', () => {
-
   before(() => {
     reactRules = require('../rules/react');
   });

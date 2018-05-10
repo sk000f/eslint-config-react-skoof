@@ -4,7 +4,7 @@
 
 module.exports = {
 
-  rules: {
+  'rules': {
 
     // enforce getter and setter pairs in objects
     'accessor-pairs': 'off',
@@ -17,7 +17,7 @@ module.exports = {
 
     // enforce that class methods utilize this
     'class-methods-use-this': ['error', {
-      exceptMethods: [],
+      'exceptMethods': []
     }],
 
     // enforce a maximum cyclomatic complexity allowed in a program
@@ -30,16 +30,16 @@ module.exports = {
     'curly': ['error', 'multi-line'],
 
     // require default cases in switch statements
-    'default-case': ['error', { commentPattern: '^no default$' }],
+    'default-case': ['error', { 'commentPattern': '^no default$' }],
 
     // enforce consistent newlines before and after dots
     'dot-location': ['error', 'property'],
 
     // enforce dot notation whenever possible
-    'dot-notation': ['error', { allowKeywords: true }],
+    'dot-notation': ['error', { 'allowKeywords': true }],
 
     // require the use of === and !==
-    'eqeqeq': ['error', 'always', { null: 'ignore' }],
+    'eqeqeq': ['error', 'always', { 'null': 'ignore' }],
 
     // require for-in loops to include an if statement
     'guard-for-in': 'error',
@@ -57,14 +57,14 @@ module.exports = {
     'no-div-regex': 'off',
 
     // disallow else blocks after return statements in if statements
-    'no-else-return': ['error', { allowElseIf: true }],
+    'no-else-return': ['error', { 'allowElseIf': true }],
 
     // disallow empty functions
     'no-empty-function': ['error', {
-      allow: [
+      'allow': [
         'arrowFunctions',
         'functions',
-        'methods',
+        'methods'
       ]
     }],
 
@@ -93,14 +93,14 @@ module.exports = {
     'no-floating-decimal': 'error',
 
     // disallow assignments to native objects or read-only global variables
-    'no-global-assign': ['error', { exceptions: [] }],
+    'no-global-assign': ['error', { 'exceptions': [] }],
 
     // disallow shorthand type conversions
     'no-implicit-coercion': ['off', {
-      boolean: false,
-      number: true,
-      string: true,
-      allow: [],
+      'boolean': false,
+      'number': true,
+      'string': true,
+      'allow': []
     }],
 
     // disallow variable and function declarations in the global scope
@@ -116,7 +116,7 @@ module.exports = {
     'no-iterator': 'error',
 
     // disallow labeled statements
-    'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
+    'no-labels': ['error', { 'allowLoop': false, 'allowSwitch': false }],
 
     // disallow unnecessary nested blocks
     'no-lone-blocks': 'error',
@@ -126,15 +126,15 @@ module.exports = {
 
     // disallow magic numbers
     'no-magic-numbers': ['off', {
-      ignore: [],
-      ignoreArrayIndexes: true,
-      enforceConst: true,
-      detectObjects: false,
+      'ignore': [],
+      'ignoreArrayIndexes': true,
+      'enforceConst': true,
+      'detectObjects': false
     }],
 
     // disallow multiple spaces
     'no-multi-spaces': ['error', {
-      ignoreEOLComments: false,
+      'ignoreEOLComments': false
     }],
 
     // disallow multiline strings
@@ -157,8 +157,8 @@ module.exports = {
 
     // disallow reassigning function parameters
     'no-param-reassign': ['error', {
-      props: true,
-      ignorePropertyModificationsFor: [
+      'props': true,
+      'ignorePropertyModificationsFor': [
         'acc', // for reduce accumulators
         'e', // for e.returnvalue
         'ctx', // for Koa routing
@@ -166,7 +166,7 @@ module.exports = {
         'request', // for Express requests
         'res', // for Express responses
         'response', // for Express responses
-        '$scope', // for Angular 1 scopes
+        '$scope' // for Angular 1 scopes
       ]
     }],
 
@@ -178,43 +178,43 @@ module.exports = {
 
     // disallow certain properties on certain objects
     'no-restricted-properties': ['error', {
-      object: 'arguments',
-      property: 'callee',
-      message: 'Property arguments.callee is deprecated',
+      'object': 'arguments',
+      'property': 'callee',
+      'message': 'Property arguments.callee is deprecated'
     }, {
-      object: 'global',
-      property: 'isFinite',
-      message: 'Please use Number.isFinite property instead',
+      'object': 'global',
+      'property': 'isFinite',
+      'message': 'Please use Number.isFinite property instead'
     }, {
-      object: 'self',
-      property: 'isFinite',
-      message: 'Please use Number.isFinite property instead',
+      'object': 'self',
+      'property': 'isFinite',
+      'message': 'Please use Number.isFinite property instead'
     }, {
-      object: 'window',
-      property: 'isFinite',
-      message: 'Please use Number.isFinite property instead',
+      'object': 'window',
+      'property': 'isFinite',
+      'message': 'Please use Number.isFinite property instead'
     }, {
-      object: 'global',
-      property: 'isNaN',
-      message: 'Please use Number.isNaN property instead',
+      'object': 'global',
+      'property': 'isNaN',
+      'message': 'Please use Number.isNaN property instead'
     }, {
-      object: 'self',
-      property: 'isNaN',
-      message: 'Please use Number.isNaN property instead',
+      'object': 'self',
+      'property': 'isNaN',
+      'message': 'Please use Number.isNaN property instead'
     }, {
-      object: 'window',
-      property: 'isNaN',
-      message: 'Please use Number.isNaN property instead',
+      'object': 'window',
+      'property': 'isNaN',
+      'message': 'Please use Number.isNaN property instead'
     }, {
-      property: '__defineGetter__',
-      message: 'Please use Object.defineProperty property instead.',
+      'property': '__defineGetter__',
+      'message': 'Please use Object.defineProperty property instead.'
     }, {
-      property: '__defineSetter__',
-      message: 'Please use Object.defineProperty property instead.',
+      'property': '__defineSetter__',
+      'message': 'Please use Object.defineProperty property instead.'
     }, {
-      object: 'Math',
-      property: 'pow',
-      message: 'Use the exponent operator (**) instead.',
+      'object': 'Math',
+      'property': 'pow',
+      'message': 'Use the exponent operator (**) instead.'
     }],
 
     // disallow assignment operators in return statements
@@ -243,9 +243,9 @@ module.exports = {
 
     // disallow unused expressions
     'no-unused-expressions': ['error', {
-      allowShortCircuit: false,
-      allowTernary: false,
-      allowTaggedTemplates: false,
+      'allowShortCircuit': false,
+      'allowTernary': false,
+      'allowTaggedTemplates': false
     }],
 
     // disallow unused labels
@@ -267,13 +267,13 @@ module.exports = {
     'no-void': 'error',
 
     // disallow specified warning terms in comments
-    'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+    'no-warning-comments': ['off', { 'terms': ['todo', 'fixme', 'xxx'], 'location': 'start' }],
 
     // disallow with statements
     'no-with': 'error',
 
     // require using Error objects as Promise rejection reasons
-    'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
+    'prefer-promise-reject-errors': ['error', { 'allowEmptyReject': true }],
 
     // enforce the consistent use of the radix argument when using parseInt()
     'radix': 'error',
@@ -285,7 +285,7 @@ module.exports = {
     'vars-on-top': 'error',
 
     // require parentheses around immediate function invocations
-    'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
+    'wrap-iife': ['error', 'outside', { 'functionPrototypeMethods': false }],
 
     // require or disallow “Yoda” conditions
     'yoda': 'error'

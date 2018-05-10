@@ -4,13 +4,13 @@
 
 module.exports = {
 
-  rules: {
+  'rules': {
 
     // enforce “for” loop update clause moving the counter in the right direction
     'for-direction': 'error',
 
     // enforce return statements in getters
-    'getter-return': ['error', { allowImplicit: true }],
+    'getter-return': ['error', { 'allowImplicit': true }],
 
     // disallow await inside of loops
     'no-await-in-loop': 'error',
@@ -56,11 +56,11 @@ module.exports = {
 
     // disallow unnecessary parentheses
     'no-extra-parens': ['off', 'all', {
-      conditionalAssign: true,
-      nestedBinaryExpressions: false,
-      returnAssign: false,
-      ignoreJSX: 'all', // handled by /rules/react.js
-      enforceForArrowConditionals: false,
+      'conditionalAssign': true,
+      'nestedBinaryExpressions': false,
+      'returnAssign': false,
+      'ignoreJSX': 'all', // handled by /rules/react.js
+      'enforceForArrowConditionals': false
     }],
 
     // disallow unnecessary semicolons
@@ -112,7 +112,7 @@ module.exports = {
     'valid-jsdoc': 'off',
 
     // enforce comparing typeof expressions against valid strings
-    'valid-typeof': ['error', { requireStringLiterals: true }],
+    'valid-typeof': ['error', { 'requireStringLiterals': true }]
   }
 };
 

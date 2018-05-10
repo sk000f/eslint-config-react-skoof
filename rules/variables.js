@@ -4,7 +4,7 @@
 
 module.exports = {
 
-  rules: {
+  'rules': {
 
     // require or disallow initialization in variable declarations
     'init-declarations': 'off',
@@ -19,7 +19,7 @@ module.exports = {
     'no-label-var': 'error',
 
     // disallow specified global variables
-    'no-restricted-globals': ['error', 'isNaN'],
+    'no-restricted-globals': ['error', 'isNaN', 'isFinite'],
 
     // disallow variable declarations from shadowing variables declared in the outer scope
     'no-shadow': 'error',
@@ -37,10 +37,12 @@ module.exports = {
     'no-undefined': 'off',
 
     // disallow unused variables
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+    'no-unused-vars': [
+      'error', { 'vars': 'all', 'args': 'after-used', 'ignoreRestSiblings': true }
+    ],
 
     // disallow the use of variables before they are defined
-    'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
+    'no-use-before-define': ['error', { 'functions': true, 'classes': true, 'variables': true }]
   }
 };
 

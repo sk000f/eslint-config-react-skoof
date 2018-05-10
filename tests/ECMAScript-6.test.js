@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let es6Rules;
 
 describe('ECMAScript 6 rules', () => {
-
   before(() => {
     es6Rules = require('../rules/ECMAScript-6');
   });

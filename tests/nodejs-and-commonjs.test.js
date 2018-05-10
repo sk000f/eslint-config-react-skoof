@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let nodeAndCommonRules;
 
 describe('nodejs and commonjs rules', () => {
-
   before(() => {
     nodeAndCommonRules = require('../rules/nodejs-and-commonjs');
   });

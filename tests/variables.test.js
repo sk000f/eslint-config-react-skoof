@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let variablesRules;
 
 describe('variables rules', () => {
-
   before(() => {
     variablesRules = require('../rules/variables');
   });

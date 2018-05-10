@@ -4,46 +4,46 @@
 
 module.exports = {
 
-  env: {
-    es6: true
+  'env': {
+    'es6': true
   },
 
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {
-      generators: true,
-      objectLiteralDuplicateProperties: false
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'generators': true,
+      'objectLiteralDuplicateProperties': false
     }
   },
 
-  rules: {
+  'rules': {
 
     // require braces around arrow function bodies
     'arrow-body-style': ['error', 'as-needed', {
-      requireReturnForObjectLiteral: false,
+      'requireReturnForObjectLiteral': false
     }],
 
     // require parentheses around arrow function arguments
     'arrow-parens': ['error', 'as-needed', {
-      requireForBlockBody: true,
+      'requireForBlockBody': true
     }],
 
     // enforce consistent spacing before and after the arrow in arrow functions
-    'arrow-spacing': ['error', { before: true, after: true }],
+    'arrow-spacing': ['error', { 'before': true, 'after': true }],
 
     // require super() calls in constructors
     'constructor-super': 'error',
 
     // enforce consistent spacing around * operators in generator functions
-    'generator-star-spacing': ['error', { before: true, after: true }],
+    'generator-star-spacing': ['error', { 'before': false, 'after': true }],
 
     // disallow reassigning class members
     'no-class-assign': 'error',
 
     // disallow arrow functions where they could be confused with comparisons
     'no-confusing-arrow': ['error', {
-      allowParens: true,
+      'allowParens': true
     }],
 
     // disallow reassigning const variables
@@ -53,7 +53,7 @@ module.exports = {
     'no-dupe-class-members': 'error',
 
     // disallow duplicate module imports
-    'no-duplicate-imports': 'off',
+    'no-duplicate-imports': 'error',
 
     // disallow new operators with the Symbol object
     'no-new-symbol': 'error',
@@ -72,9 +72,9 @@ module.exports = {
 
     // disallow renaming import, export, and destructured assignments to the same name
     'no-useless-rename': ['error', {
-      ignoreDestructuring: false,
-      ignoreImport: false,
-      ignoreExport: false,
+      'ignoreDestructuring': false,
+      'ignoreImport': false,
+      'ignoreExport': false
     }],
 
     // require let or const instead of var
@@ -82,34 +82,34 @@ module.exports = {
 
     // require or disallow method and property shorthand syntax for object literals
     'object-shorthand': ['error', 'always', {
-      ignoreConstructors: false,
-      avoidQuotes: true,
+      'ignoreConstructors': false,
+      'avoidQuotes': true
     }],
 
     // require using arrow functions for callbacks
     'prefer-arrow-callback': ['error', {
-      allowNamedFunctions: false,
-      allowUnboundThis: true,
+      'allowNamedFunctions': false,
+      'allowUnboundThis': true
     }],
 
     // require const declarations for variables that are never reassigned after declared
     'prefer-const': ['error', {
-      destructuring: 'any',
-      ignoreReadBeforeAssign: true,
+      'destructuring': 'any',
+      'ignoreReadBeforeAssign': true
     }],
 
     // require destructuring from arrays and/or objects
     'prefer-destructuring': ['error', {
-      VariableDeclarator: {
-        array: false,
-        object: true,
+      'VariableDeclarator': {
+        'array': false,
+        'object': true
       },
-      AssignmentExpression: {
-        array: true,
-        object: true,
-      },
+      'AssignmentExpression': {
+        'array': true,
+        'object': true
+      }
     }, {
-      enforceForRenamedProperties: false,
+      'enforceForRenamedProperties': false
     }],
 
     // disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
@@ -132,9 +132,9 @@ module.exports = {
 
     // enforce sorted import declarations within modules
     'sort-imports': ['off', {
-      ignoreCase: false,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+      'ignoreCase': false,
+      'ignoreMemberSort': false,
+      'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']
     }],
 
     // require symbol descriptions

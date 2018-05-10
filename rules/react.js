@@ -3,22 +3,22 @@
 /* eslint-disable no-undef */
 
 module.exports = {
-  plugins: [
-    'react',
+  'plugins': [
+    'react'
   ],
 
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
+  'parserOptions': {
+    'ecmaFeatures': {
+      'jsx': true
+    }
   },
 
-  rules: {
+  'rules': {
 
     // require specific class methods to use this keyword
     // (extends configuration from best-practices.js)
     'class-methods-use-this': ['error', {
-      exceptMethods: [
+      'exceptMethods': [
         'render',
         'getInitialState',
         'getDefaultProps',
@@ -29,8 +29,8 @@ module.exports = {
         'shouldComponentUpdate',
         'componentWillUpdate',
         'componentDidUpdate',
-        'componentWillUnmount',
-      ],
+        'componentWillUnmount'
+      ]
     }],
 
     // require double quotes in JSX attributes
@@ -39,33 +39,33 @@ module.exports = {
 
     // enforces consistent naming for boolean props
     'react/boolean-prop-naming': ['off', {
-      propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'],
-      rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
+      'propTypeNames': ['bool', 'mutuallyExclusiveTrueProps'],
+      'rule': '^(is|has)[A-Z]([A-Za-z0-9]?)+'
     }],
 
-    // forbid "button" element without an explicit "type" attribute
+    // forbid 'button' element without an explicit 'type' attribute
     // 'react/button-has-type':
 
     // prevent extraneous defaultProps on components
-    'react/default-props-match-prop-types': ['error', { allowRequiredDefaults: false }],
+    'react/default-props-match-prop-types': ['error', { 'allowRequiredDefaults': false }],
 
     // rule enforces consistent usage of destructuring assignment in component
     // 'react/destructuring-assignment':
 
     // prevent missing displayName in a React component definition
-    'react/display-name': ['off', { ignoreTranspilerName: false }],
+    'react/display-name': ['off', { 'ignoreTranspilerName': false }],
 
     // forbid certain props on Components
-    'react/forbid-component-props': ['off', { forbid: [] }],
+    'react/forbid-component-props': ['off', { 'forbid': [] }],
 
     // forbid certain props on DOM Nodes
     // 'react/forbid-dom-props':
 
     // forbid certain elements
-    'react/forbid-elements': ['off', { forbid: [], }],
+    'react/forbid-elements': ['off', { 'forbid': [] }],
 
     // forbid certain propTypes
-    'react/forbid-prop-types': ['error', { forbid: ['any', 'array', 'object'] }],
+    'react/forbid-prop-types': ['error', { 'forbid': ['any', 'array', 'object'] }],
 
     // forbid foreign propTypes
     'react/forbid-foreign-prop-types': 'off',
@@ -104,7 +104,7 @@ module.exports = {
     'react/no-is-mounted': 'error',
 
     // prevent multiple component definition per file
-    'react/no-multi-comp': ['error', { ignoreStateless: true }],
+    'react/no-multi-comp': ['error', { 'ignoreStateless': true }],
 
     // prevent usage of shouldComponentUpdate when extending React.PureComponent
     'react/no-redundant-should-component-update': 'error',
@@ -132,9 +132,9 @@ module.exports = {
 
     // prevent definitions of unused prop types
     'react/no-unused-prop-types': ['error', {
-      customValidators: [
+      'customValidators': [
       ],
-      skipShapeProps: true,
+      'skipShapeProps': true
     }],
 
     // prevent definitions of unused state properties
@@ -147,13 +147,13 @@ module.exports = {
     'react/prefer-es6-class': ['error', 'always'],
 
     // enforce stateless React Components to be written as a pure function
-    'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
+    'react/prefer-stateless-function': ['error', { 'ignorePureComponents': true }],
 
     // prevent missing props validation in a React component definition
     'react/prop-types': ['error', {
-      ignore: [],
-      customValidators: [],
-      skipUndeclared: false
+      'ignore': [],
+      'customValidators': [],
+      'skipUndeclared': false
     }],
 
     // prevent missing React when using JSX
@@ -163,7 +163,7 @@ module.exports = {
     'react/require-default-props': 'error',
 
     // enforce React components to have a shouldComponentUpdate method
-    'react/require-optimization': ['off', { allowDecorators: [] }],
+    'react/require-optimization': ['off', { 'allowDecorators': [] }],
 
     // enforce ES5 or ES6 class for returning value in render function
     'react/require-render-return': 'error',
@@ -173,7 +173,7 @@ module.exports = {
 
     // enforce component methods order (fixable)
     'react/sort-comp': ['error', {
-      order: [
+      'order': [
         'static-methods',
         'lifecycle',
         '/^on.+$/',
@@ -183,14 +183,14 @@ module.exports = {
         'everything-else',
         '/^render.+$/',
         'render'
-      ],
+      ]
     }],
 
     // enforce propTypes declarations alphabetical sorting
     'react/sort-prop-types': ['off', {
-      ignoreCase: true,
-      callbacksLast: false,
-      requiredFirst: false,
+      'ignoreCase': true,
+      'callbacksLast': false,
+      'requiredFirst': false
     }],
 
     // enforce style prop value being an object
@@ -201,15 +201,15 @@ module.exports = {
 
   },
 
-  settings: {
+  'settings': {
     'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.json']
+      'node': {
+        'extensions': ['.js', '.jsx', '.json']
       }
     },
-    react: {
-      pragma: 'React',
-      version: '16.0'
+    'react': {
+      'pragma': 'React',
+      'version': '16.0'
     }
   }
 };

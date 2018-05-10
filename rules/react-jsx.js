@@ -3,20 +3,20 @@
 /* eslint-disable no-undef */
 
 module.exports = {
-  plugins: [
-    'react',
+  'plugins': [
+    'react'
   ],
 
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
+  'parserOptions': {
+    'ecmaFeatures': {
+      'jsx': true
+    }
   },
 
-  rules: {
+  'rules': {
 
     // enforce boolean attributes notation in JSX (fixable)
-    'react/jsx-boolean-value': ['error', 'never', { always: [] }],
+    'react/jsx-boolean-value': ['error', 'never', { 'always': [] }],
 
     // enforce or disallow spaces inside of curly braces in JSX attributes and expressions.
     // 'react/jsx-child-element-spacing':
@@ -28,24 +28,24 @@ module.exports = {
     'react/jsx-closing-tag-location': 'error',
 
     // enforce curly braces or disallow unnecessary curly braces in JSX
-    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
+    'react/jsx-curly-brace-presence': ['error', { 'props': 'never', 'children': 'never' }],
 
     // enforce or disallow spaces inside of curly braces in JSX attributes and expressions (fixable)
-    'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }],
+    'react/jsx-curly-spacing': ['error', 'never', { 'allowMultiline': true }],
 
     // enforce or disallow spaces around equal signs in JSX attributes (fixable)
     'react/jsx-equals-spacing': ['error', 'never'],
 
     // restrict file extensions that may contain JSX
-    'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
+    'react/jsx-filename-extension': ['error', { 'extensions': ['.jsx'] }],
 
     // enforce position of the first prop in JSX (fixable)
     'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
 
     // enforce event handler naming conventions in JSX
     'react/jsx-handler-names': ['off', {
-      eventHandlerPrefix: 'handle',
-      eventHandlerPropPrefix: 'on',
+      'eventHandlerPrefix': 'handle',
+      'eventHandlerPropPrefix': 'on'
     }],
 
     // validate JSX indentation (fixable)
@@ -58,23 +58,23 @@ module.exports = {
     'react/jsx-key': 'off',
 
     // limit maximum of props on a single line in JSX (fixable)
-    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
+    'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'multiline' }],
 
     // prevent usage of .bind() and arrow functions in JSX props
     'react/jsx-no-bind': ['error', {
-      ignoreRefs: true,
-      allowArrowFunctions: true,
-      allowBind: false,
+      'ignoreRefs': true,
+      'allowArrowFunctions': true,
+      'allowBind': false
     }],
 
     // prevent comments from being inserted as text nodes
     'react/jsx-no-comment-textnodes': 'error',
 
     // prevent duplicate props in JSX
-    'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
+    'react/jsx-no-duplicate-props': ['error', { 'ignoreCase': true }],
 
     // prevent usage of unwrapped JSX strings
-    'react/jsx-no-literals': ['off', { noStrings: true }],
+    'react/jsx-no-literals': ['off', { 'noStrings': true }],
 
     // prevent usage of unsafe target='_blank'
     'react/jsx-no-target-blank': 'error',
@@ -87,8 +87,8 @@ module.exports = {
 
     // enforce PascalCase for user-defined JSX components
     'react/jsx-pascal-case': ['error', {
-      allowAllCaps: true,
-      ignore: [],
+      'allowAllCaps': true,
+      'ignore': []
     }],
 
     // enforce default props alphabetical sorting
@@ -96,12 +96,12 @@ module.exports = {
 
     // enforce props alphabetical sorting (fixable)
     'react/jsx-sort-props': ['off', {
-      ignoreCase: true,
-      callbacksLast: false,
-      shorthandFirst: false,
-      shorthandLast: false,
-      noSortAlphabetically: false,
-      reservedFirst: true,
+      'ignoreCase': true,
+      'callbacksLast': false,
+      'shorthandFirst': false,
+      'shorthandLast': false,
+      'noSortAlphabetically': false,
+      'reservedFirst': true
     }],
 
     // validate spacing before closing bracket in JSX (fixable)
@@ -109,9 +109,9 @@ module.exports = {
 
     // validate whitespace in and around the JSX opening and closing brackets (fixable)
     'react/jsx-tag-spacing': ['error', {
-      closingSlash: 'never',
-      beforeSelfClosing: 'always',
-      afterOpening: 'never'
+      'closingSlash': 'never',
+      'beforeSelfClosing': 'always',
+      'afterOpening': 'never'
     }],
 
     // prevent React to be incorrectly marked as unused
@@ -122,22 +122,22 @@ module.exports = {
 
     // prevent missing parentheses around multilines JSX (fixable)
     'react/jsx-wrap-multilines': ['error', {
-      declaration: true,
-      assignment: true,
-      return: true,
-      arrow: true,
+      'declaration': true,
+      'assignment': true,
+      'return': true,
+      'arrow': true
     }]
   },
 
-  settings: {
+  'settings': {
     'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.json']
+      'node': {
+        'extensions': ['.js', '.jsx', '.json']
       }
     },
-    react: {
-      pragma: 'React',
-      version: '16.0'
+    'react': {
+      'pragma': 'React',
+      'version': '16.0'
     }
   }
 };

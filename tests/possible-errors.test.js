@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let possibleErrorsRules;
 
 describe('possible errors rules', () => {
-
   before(() => {
     possibleErrorsRules = require('../rules/possible-errors');
   });

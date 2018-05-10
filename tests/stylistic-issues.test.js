@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let stylisticIssueRules;
 
 describe('stylistic issues rules', () => {
-
   before(() => {
     stylisticIssueRules = require('../rules/stylistic-issues');
   });

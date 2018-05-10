@@ -4,7 +4,7 @@
 
 module.exports = {
 
-  rules: {
+  'rules': {
 
     // require return statements after callbacks
     // 'callback-return':

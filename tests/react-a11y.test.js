@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let reactA11yRules;
 
 describe('react a11y rules', () => {
-
   before(() => {
     reactA11yRules = require('../rules/react-a11y');
   });

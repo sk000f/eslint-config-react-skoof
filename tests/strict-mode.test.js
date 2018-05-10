@@ -6,7 +6,6 @@ import { expect } from 'chai';
 let strictModeRules;
 
 describe('strict mode rules', () => {
-
   before(() => {
     strictModeRules = require('../rules/strict-mode');
   });

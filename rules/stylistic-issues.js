@@ -4,13 +4,13 @@
 
 module.exports = {
 
-  rules: {
+  'rules': {
 
     // enforce linebreaks after opening and before closing array brackets
     // 'array-bracket-newline':
 
     // enforce consistent spacing inside array brackets
-    // 'array-bracket-spacing':
+    'array-bracket-spacing': ['error', 'never'],
 
     // enforce line breaks after each array element
     // 'array-element-newline':
@@ -19,22 +19,22 @@ module.exports = {
     // 'block-spacing':
 
     // enforce consistent brace style for blocks
-    // 'brace-style':
+    'brace-style': ['error', '1tbs'],
 
     // enforce camelcase naming convention
-    // 'camelcase':
+    'camelcase': 'error',
 
     // enforce or disallow capitalization of the first letter of a comment
     // 'capitalized-comments':
 
     // require or disallow trailing commas
-    // 'comma-dangle':
+    'comma-dangle': ['error', 'never'],
 
     // enforce consistent spacing before and after commas
     // 'comma-spacing':
 
     // enforce consistent comma style
-    // 'comma-style':
+    'comma-style': ['error', 'last'],
 
     // enforce consistent spacing inside computed property brackets
     // 'computed-property-spacing':
@@ -43,28 +43,28 @@ module.exports = {
     // 'consistent-this':
 
     // require or disallow newline at the end of files
-    // 'eol-last':
+    'eol-last': ['error', 'always'],
 
     // require or disallow spacing between function identifiers and their invocations
     // 'func-call-spacing':
 
-    // require function names to match the name of the variable or property to which they are assigned
+    // require function names to match the name of the variable or prop to which they are assigned
     // 'func-name-matching':
 
     // require or disallow named function expressions
     // 'func-names':
 
     // enforce the consistent use of either function declarations or expressions
-    // 'func-style':
+    'func-style': ['error', 'expression'],
 
     // enforce consistent line breaks inside function parentheses
-    // 'function-paren-newline':
+    'function-paren-newline': ['error', 'multiline'],
 
     // disallow specified identifiers
     // 'id-blacklist':
 
     // enforce minimum and maximum identifier lengths
-    // 'id-length':
+    'id-length': 'error',
 
     // require identifiers to match a specified regular expression
     // 'id-match':
@@ -73,16 +73,13 @@ module.exports = {
     // 'implicit-arrow-linebreak':
 
     // enforce consistent indentation
-    // 'indent':
-
-    // enforce the consistent use of either double or single quotes in JSX attributes
-    // 'jsx-quotes':
+    'indent': ['error', 2],
 
     // enforce consistent spacing between keys and values in object literal properties
     // 'key-spacing':
 
     // enforce consistent spacing before and after keywords
-    // 'keyword-spacing':
+    'keyword-spacing': ['error', { 'before': true, 'after': true }],
 
     // enforce position of line comments
     // 'line-comment-position':
@@ -100,7 +97,7 @@ module.exports = {
     // 'max-depth':
 
     // enforce a maximum line length
-    // 'max-len':
+    'max-len': ['error', 100],
 
     // enforce a maximum number of lines per file
     // 'max-lines':
@@ -124,16 +121,16 @@ module.exports = {
     // 'multiline-ternary':
 
     // require constructor names to begin with a capital letter
-    // 'new-cap':
+    'new-cap': 'error',
 
     // require parentheses when invoking a constructor with no arguments
     // 'new-parens':
 
     // require a newline after each call in a method chain
-    // 'newline-per-chained-call':
+    'newline-per-chained-call': 'error',
 
     // disallow Array constructors
-    // 'no-array-constructor':
+    'no-array-constructor': 'error',
 
     // disallow bitwise operators
     // 'no-bitwise':
@@ -148,13 +145,13 @@ module.exports = {
     // 'no-lonely-if':
 
     // disallow mixed binary operators
-    // 'no-mixed-operators':
+    'no-mixed-operators': 'error',
 
     // disallow mixed spaces and tabs for indentation
     // 'no-mixed-spaces-and-tabs':
 
     // disallow use of chained assignment expressions
-    // 'no-multi-assign':
+    'no-multi-assign': 'error',
 
     // disallow multiple empty lines
     // 'no-multiple-empty-lines':
@@ -163,13 +160,13 @@ module.exports = {
     // 'no-negated-condition':
 
     // disallow nested ternary expressions
-    // 'no-nested-ternary':
+    'no-nested-ternary': 'error',
 
     // disallow Object constructors
-    // 'no-new-object':
+    'no-new-object': 'error',
 
     // disallow the unary operators ++ and --
-    // 'no-plusplus':
+    'no-plusplus': 'error',
 
     // disallow specified syntax
     // 'no-restricted-syntax':
@@ -184,28 +181,28 @@ module.exports = {
     // 'no-trailing-spaces':
 
     // disallow dangling underscores in identifiers
-    // 'no-underscore-dangle':
+    'no-underscore-dangle': 'error',
 
     // disallow ternary operators when simpler alternatives exist
-    // 'no-unneeded-ternary':
+    'no-unneeded-ternary': 'error',
 
     // disallow whitespace before properties
-    // 'no-whitespace-before-property':
+    'no-whitespace-before-property': 'error',
 
     // enforce the location of single-line statements
-    // 'nonblock-statement-body-position':
+    'nonblock-statement-body-position': 'error',
 
     // enforce consistent line breaks inside braces
-    // 'object-curly-newline':
+    // 'object-curly-newline': 
 
     // enforce consistent spacing inside braces
-    // 'object-curly-spacing':
+    'object-curly-spacing': ['error', 'always'],
 
     // enforce placing object properties on separate lines
     // 'object-property-newline':
 
     // enforce variables to be declared either together or separately in functions
-    // 'one-var':
+    'one-var': ['error', 'always'],
 
     // require or disallow newlines around variable declarations
     // 'one-var-declaration-per-line':
@@ -214,25 +211,25 @@ module.exports = {
     // 'operator-assignment':
 
     // enforce consistent linebreak style for operators
-    // 'operator-linebreak':
+    'operator-linebreak': 'error',
 
     // require or disallow padding within blocks
-    // 'padded-blocks':
+    'padded-blocks': ['error', 'never'],
 
     // require or disallow padding lines between statements
     // 'padding-line-between-statements':
 
     // require quotes around object literal property names
-    // 'quote-props':
+    'quote-props': ['error', 'always'],
 
     // enforce the consistent use of either backticks, double, or single quotes
-    // 'quotes':
+    'quotes': ['error', 'single'],
 
     // require JSDoc comments
     // 'require-jsdoc':
 
     // require or disallow semicolons instead of ASI
-    // 'semi':
+    'semi': ['error', 'always'],
 
     // enforce consistent spacing before and after semicolons
     // 'semi-spacing':
@@ -247,22 +244,22 @@ module.exports = {
     // 'sort-vars':
 
     // enforce consistent spacing before blocks
-    // 'space-before-blocks':
+    'space-before-blocks': ['error', 'always'],
 
     // enforce consistent spacing before function definition opening parenthesis
-    // 'space-before-function-paren':
+    'space-before-function-paren': ['error', 'never'],
 
     // enforce consistent spacing inside parentheses
-    // 'space-in-parens':
+    'space-in-parens': ['error', 'never'],
 
     // require spacing around infix operators
-    // 'space-infix-ops':
+    'space-infix-ops': 'error',
 
     // enforce consistent spacing before or after unary operators
     // 'space-unary-ops':
 
     // enforce consistent spacing after the // or /* in a comment
-    // 'spaced-comment':
+    'spaced-comment': ['error', 'always']
 
     // enforce spacing around colons of switch statements
     // 'switch-colon-spacing':
