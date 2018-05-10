@@ -65,7 +65,7 @@ module.exports = {
     'react/forbid-elements': ['off', { 'forbid': [] }],
 
     // forbid certain propTypes
-    'react/forbid-prop-types': ['error', { 'forbid': ['any', 'array', 'object'] }],
+    // 'react/forbid-prop-types':
 
     // forbid foreign propTypes
     'react/forbid-foreign-prop-types': 'off',
