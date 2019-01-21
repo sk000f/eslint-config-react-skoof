@@ -3,9 +3,7 @@
 /* eslint-disable no-undef */
 
 module.exports = {
-  'plugins': [
-    'react'
-  ],
+  'plugins': ['react'],
 
   'parserOptions': {
     'ecmaFeatures': {
@@ -14,34 +12,39 @@ module.exports = {
   },
 
   'rules': {
-
     // require specific class methods to use this keyword
     // (extends configuration from best-practices.js)
-    'class-methods-use-this': ['error', {
-      'exceptMethods': [
-        'render',
-        'getInitialState',
-        'getDefaultProps',
-        'getChildContext',
-        'componentWillMount',
-        'componentDidMount',
-        'componentWillReceiveProps',
-        'shouldComponentUpdate',
-        'componentWillUpdate',
-        'componentDidUpdate',
-        'componentWillUnmount'
-      ]
-    }],
+    'class-methods-use-this': [
+      'error',
+      {
+        'exceptMethods': [
+          'render',
+          'getInitialState',
+          'getDefaultProps',
+          'getChildContext',
+          'componentWillMount',
+          'componentDidMount',
+          'componentWillReceiveProps',
+          'shouldComponentUpdate',
+          'componentWillUpdate',
+          'componentDidUpdate',
+          'componentWillUnmount'
+        ]
+      }
+    ],
 
     // require double quotes in JSX attributes
     // (extends configuration from stylistic-issues.js)
     'jsx-quotes': ['error', 'prefer-double'],
 
     // enforces consistent naming for boolean props
-    'react/boolean-prop-naming': ['off', {
-      'propTypeNames': ['bool', 'mutuallyExclusiveTrueProps'],
-      'rule': '^(is|has)[A-Z]([A-Za-z0-9]?)+'
-    }],
+    'react/boolean-prop-naming': [
+      'off',
+      {
+        'propTypeNames': ['bool', 'mutuallyExclusiveTrueProps'],
+        'rule': '^(is|has)[A-Z]([A-Za-z0-9]?)+'
+      }
+    ],
 
     // forbid 'button' element without an explicit 'type' attribute
     // 'react/button-has-type':
@@ -89,10 +92,10 @@ module.exports = {
     'react/no-deprecated': ['error'],
 
     // prevent usage of setState in componentDidMount
-    'react/no-did-mount-set-state': 'error',
+    // 'react/no-did-mount-set-state': 'error',
 
     // prevent usage of setState in componentDidUpdate
-    'react/no-did-update-set-state': 'error',
+    'react/no-did-update-set-state': 'warn',
 
     // prevent direct mutation of this.state
     'react/no-direct-mutation-state': 'off',
@@ -131,11 +134,13 @@ module.exports = {
     'react/no-unknown-property': 'error',
 
     // prevent definitions of unused prop types
-    'react/no-unused-prop-types': ['error', {
-      'customValidators': [
-      ],
-      'skipShapeProps': true
-    }],
+    'react/no-unused-prop-types': [
+      'error',
+      {
+        'customValidators': [],
+        'skipShapeProps': true
+      }
+    ],
 
     // prevent definitions of unused state properties
     'react/no-unused-state': 'error',
@@ -150,11 +155,14 @@ module.exports = {
     'react/prefer-stateless-function': ['error', { 'ignorePureComponents': true }],
 
     // prevent missing props validation in a React component definition
-    'react/prop-types': ['error', {
-      'ignore': [],
-      'customValidators': [],
-      'skipUndeclared': false
-    }],
+    'react/prop-types': [
+      'error',
+      {
+        'ignore': [],
+        'customValidators': [],
+        'skipUndeclared': false
+      }
+    ],
 
     // prevent missing React when using JSX
     'react/react-in-jsx-scope': 'error',
@@ -172,33 +180,38 @@ module.exports = {
     'react/self-closing-comp': 'error',
 
     // enforce component methods order (fixable)
-    'react/sort-comp': ['error', {
-      'order': [
-        'static-methods',
-        'lifecycle',
-        '/^on.+$/',
-        'getters',
-        'setters',
-        '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-        'everything-else',
-        '/^render.+$/',
-        'render'
-      ]
-    }],
+    'react/sort-comp': [
+      'error',
+      {
+        'order': [
+          'static-methods',
+          'lifecycle',
+          '/^on.+$/',
+          'getters',
+          'setters',
+          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+          'everything-else',
+          '/^render.+$/',
+          'render'
+        ]
+      }
+    ],
 
     // enforce propTypes declarations alphabetical sorting
-    'react/sort-prop-types': ['off', {
-      'ignoreCase': true,
-      'callbacksLast': false,
-      'requiredFirst': false
-    }],
+    'react/sort-prop-types': [
+      'off',
+      {
+        'ignoreCase': true,
+        'callbacksLast': false,
+        'requiredFirst': false
+      }
+    ],
 
     // enforce style prop value being an object
     'react/style-prop-object': 'error',
 
     // prevent void DOM elements (e.g. <img />, <br />) from receiving children
     'react/void-dom-elements-no-children': 'error'
-
   },
 
   'settings': {

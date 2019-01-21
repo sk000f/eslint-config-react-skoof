@@ -3,9 +3,7 @@
 /* eslint-disable no-undef */
 
 module.exports = {
-
   'rules': {
-
     // enforce “for” loop update clause moving the counter in the right direction
     'for-direction': 'error',
 
@@ -22,7 +20,7 @@ module.exports = {
     'no-cond-assign': ['error', 'always'],
 
     // disallow the use of console
-    'no-console': 'warn',
+    'no-console': ['warn', { 'allow': ['info'] }],
 
     // disallow constant expressions in conditions
     'no-constant-condition': 'warn',
@@ -55,13 +53,17 @@ module.exports = {
     'no-extra-boolean-cast': 'error',
 
     // disallow unnecessary parentheses
-    'no-extra-parens': ['off', 'all', {
-      'conditionalAssign': true,
-      'nestedBinaryExpressions': false,
-      'returnAssign': false,
-      'ignoreJSX': 'all', // handled by /rules/react.js
-      'enforceForArrowConditionals': false
-    }],
+    'no-extra-parens': [
+      'off',
+      'all',
+      {
+        'conditionalAssign': true,
+        'nestedBinaryExpressions': false,
+        'returnAssign': false,
+        'ignoreJSX': 'all', // handled by /rules/react.js
+        'enforceForArrowConditionals': false
+      }
+    ],
 
     // disallow unnecessary semicolons
     'no-extra-semi': 'error',

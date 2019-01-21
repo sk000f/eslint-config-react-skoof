@@ -3,9 +3,7 @@
 /* eslint-disable no-undef */
 
 module.exports = {
-
   'rules': {
-
     // enforce linebreaks after opening and before closing array brackets
     // 'array-bracket-newline':
 
@@ -97,7 +95,7 @@ module.exports = {
     // 'max-depth':
 
     // enforce a maximum line length
-    'max-len': ['error', 100],
+    'max-len': ['error', 150],
 
     // enforce a maximum number of lines per file
     // 'max-lines':
@@ -181,7 +179,7 @@ module.exports = {
     // 'no-trailing-spaces':
 
     // disallow dangling underscores in identifiers
-    'no-underscore-dangle': 'error',
+    // 'no-underscore-dangle': 'error',
 
     // disallow ternary operators when simpler alternatives exist
     'no-unneeded-ternary': 'error',
@@ -193,7 +191,7 @@ module.exports = {
     'nonblock-statement-body-position': 'error',
 
     // enforce consistent line breaks inside braces
-    // 'object-curly-newline': 
+    // 'object-curly-newline':
 
     // enforce consistent spacing inside braces
     'object-curly-spacing': ['error', 'always'],

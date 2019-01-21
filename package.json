@@ -21,7 +21,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ignore-path .gitignore",
+    "lint": "eslint './rules/**/*.js' './tests/**/*.test.js'",
     "lint:verbose": "DEBUG=eslint:cli-engine eslint .",
     "test": "mocha --require babel-core/register ./tests/**/*.test.js",
     "cover": "istanbul cover --dir ./coverage _mocha -- --compilers js:babel-core/register --colors -R spec ./tests/**/*.test.js"
