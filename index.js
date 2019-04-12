@@ -1,8 +1,7 @@
-
 /* eslint-disable no-undef */
 
 module.exports = {
-  'extends': [
+  extends: [
     './rules/possible-errors',
     './rules/best-practices',
     './rules/strict-mode',
@@ -12,13 +11,14 @@ module.exports = {
     './rules/ECMAScript-6',
     './rules/react',
     './rules/react-jsx',
-    './rules/react-a11y'
+    './rules/react-a11y',
+    './rules/typescript-ts'
   ].map(require.resolve),
-  'parserOptions': {
-    'ecmaVersion': 2017,
-    'sourceType': 'module'
+  parserOptions: {
+    ecmaVersion: 2017,
+    sourceType: 'module'
   },
-  'rules': {}
+  rules: {}
 };
 
 /* eslint-enable no-undef */
