@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-skoof",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "ESLint Shareable Config for JavaScript and React",
   "author": "Mike Skaife <mike@skaife.me>",
   "contributors": [
