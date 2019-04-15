@@ -3,7 +3,7 @@
 /* eslint-disable no-undef */
 
 module.exports = {
-  'rules': {
+  rules: {
     // enforce linebreaks after opening and before closing array brackets
     // 'array-bracket-newline':
 
@@ -20,7 +20,7 @@ module.exports = {
     'brace-style': ['error', '1tbs'],
 
     // enforce camelcase naming convention
-    'camelcase': 'error',
+    camelcase: 'error',
 
     // enforce or disallow capitalization of the first letter of a comment
     // 'capitalized-comments':
@@ -71,13 +71,13 @@ module.exports = {
     // 'implicit-arrow-linebreak':
 
     // enforce consistent indentation
-    'indent': ['error', 2],
+    indent: ['error', 2, { ignoredNodes: ['JSXElement *'] }],
 
     // enforce consistent spacing between keys and values in object literal properties
     // 'key-spacing':
 
     // enforce consistent spacing before and after keywords
-    'keyword-spacing': ['error', { 'before': true, 'after': true }],
+    'keyword-spacing': ['error', { before: true, after: true }],
 
     // enforce position of line comments
     // 'line-comment-position':
@@ -221,13 +221,13 @@ module.exports = {
     'quote-props': ['error', 'always'],
 
     // enforce the consistent use of either backticks, double, or single quotes
-    'quotes': ['error', 'single'],
+    quotes: ['error', 'single'],
 
     // require JSDoc comments
     // 'require-jsdoc':
 
     // require or disallow semicolons instead of ASI
-    'semi': ['error', 'always'],
+    semi: ['error', 'always'],
 
     // enforce consistent spacing before and after semicolons
     // 'semi-spacing':
