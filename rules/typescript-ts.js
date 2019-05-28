@@ -5,28 +5,31 @@
 module.exports = {
   'plugins': ['@typescript-eslint'],
   'parser': '@typescript-eslint/parser',
+  'parserOptions': {
+    'project': './tsconfig.json'
+  },
 
   'rules': {
     // Require that member overloads be consecutive (adjacent-overload-signatures from TSLint)
     '@typescript-eslint/adjacent-overload-signatures': 'off',
 
     // Requires using either T[] or Array<T> for arrays (array-type from TSLint)
-    '@typescript-eslint/array-type': 'off',
+    '@typescript-eslint/array-type': 'warn',
 
     // Enforces that types will not be used (ban-types from TSLint)
     '@typescript-eslint/ban-types': 'off',
 
     // Bans “// @ts-ignore” comments from being used (ban-ts-ignore from TSLint)
-    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/ban-ts-ignore': 'warn',
 
     // Enforce camelCase naming convention
-    '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/camelcase': 'error',
 
     // Require PascalCased class and interface names (class-name from TSLint)
-    '@typescript-eslint/class-name-casing': 'off',
+    '@typescript-eslint/class-name-casing': 'error',
 
     // Require explicit return types on functions and class methods
-    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'error',
 
     // Require explicit accessibility modifiers on class properties and methods (member-access from TSLint)
     '@typescript-eslint/explicit-member-accessibility': 'off',
@@ -38,7 +41,7 @@ module.exports = {
     '@typescript-eslint/indent': 'off',
 
     // Require that interface names be prefixed with I (interface-name from TSLint)
-    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/interface-name-prefix': 'error',
 
     // Require a specific member delimiter style for interfaces and type literals
     '@typescript-eslint/member-delimiter-style': 'off',
@@ -47,22 +50,22 @@ module.exports = {
     '@typescript-eslint/member-naming': 'off',
 
     // Require a consistent member declaration order (member-ordering from TSLint)
-    '@typescript-eslint/member-ordering': 'off',
+    '@typescript-eslint/member-ordering': 'error',
 
     // Enforces the use of as Type assertions instead of <Type> assertions (no-angle-bracket-type-assertion from TSLint)
     '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
 
     // Disallow generic Array constructors
-    '@typescript-eslint/no-array-constructor': 'off',
+    '@typescript-eslint/no-array-constructor': 'error',
 
     // Disallow the declaration of empty interfaces (no-empty-interface from TSLint)
-    '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/no-empty-interface': 'error',
 
     // Disallow usage of the any type (no-any from TSLint)
     '@typescript-eslint/no-explicit-any': 'off',
 
     // Forbids the use of classes as namespaces (no-unnecessary-class from TSLint)
-    '@typescript-eslint/no-extraneous-class': 'off',
+    '@typescript-eslint/no-extraneous-class': 'error',
 
     // Disallow iterating over an array with a for-in loop (no-for-in-array from TSLint)
     '@typescript-eslint/no-for-in-array': 'off',
@@ -74,10 +77,10 @@ module.exports = {
     '@typescript-eslint/no-misused-new': 'off',
 
     // Disallow the use of custom TypeScript modules and namespaces (no-namespace from TSLint)
-    '@typescript-eslint/no-namespace': 'off',
+    '@typescript-eslint/no-namespace': 'warn',
 
     // Disallows non-null assertions using the ! postfix operator (no-non-null-assertion from TSLint)
-    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'error',
 
     // Forbids an object literal to appear in a type assertion expression (no-object-literal-type-assertion from TSLint)
     '@typescript-eslint/no-object-literal-type-assertion': 'off',
@@ -89,13 +92,13 @@ module.exports = {
     '@typescript-eslint/no-require-imports': 'off',
 
     // Disallow aliasing this (no-this-assignment from TSLint)
-    '@typescript-eslint/no-this-alias': 'off',
+    '@typescript-eslint/no-this-alias': 'error',
 
     // Disallow /// <reference path="" /> comments (no-reference from TSLint)
-    '@typescript-eslint/no-triple-slash-reference': 'off',
+    '@typescript-eslint/no-triple-slash-reference': 'error',
 
     // Disallow the use of type aliases (interface-over-type-literal from TSLint)
-    '@typescript-eslint/no-type-alias': 'off',
+    '@typescript-eslint/no-type-alias': 'error',
 
     // Warns when a namespace qualifier is unnecessary (no-unnecessary-qualifier from TSLint)
     '@typescript-eslint/no-unnecessary-qualifier': 'off',
@@ -104,19 +107,16 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-assertion': 'off',
 
     // Disallow unused variables (no-unused-variable from TSLint)
-    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
 
     // Disallow the use of variables before they are defined
-    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
 
     // Disallow unnecessary constructors
-    '@typescript-eslint/no-useless-constructor': 'off',
+    '@typescript-eslint/no-useless-constructor': 'error',
 
     // Disallows the use of require statements except in import statements (no-var-requires from TSLint)
-    '@typescript-eslint/no-var-requires': 'off',
-
-    // Prefer a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated
-    '@typescript-eslint/prefer-for-of': 'off',
+    '@typescript-eslint/no-var-requires': 'warn',
 
     // Use function types instead of interfaces with call signatures (callable-types from TSLint)
     '@typescript-eslint/prefer-function-type': 'off',
@@ -131,16 +131,13 @@ module.exports = {
     '@typescript-eslint/promise-function-async': 'off',
 
     // When adding two variables, operands must both be of type number or of type string. (restrict-plus-operands from TSLint)
-    '@typescript-eslint/restrict-plus-operands': 'off',
+    '@typescript-eslint/restrict-plus-operands': 'error',
 
     // Require consistent spacing around type annotations (typedef-whitespace from TSLint)
     '@typescript-eslint/type-annotation-spacing': 'off',
 
-    // Enforces unbound methods are called with their expected scope. (no-unbound-method from TSLint)
-    '@typescript-eslint/unbound-method': 'off',
-
     // Warns for any two overloads that could be unified into one. (unified-signatures from TSLint)
-    '@typescript-eslint/unified-signatures': 'off'
+    '@typescript-eslint/unified-signatures': 'error'
   }
 };
 
