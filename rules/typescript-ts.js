@@ -40,9 +40,6 @@ module.exports = {
     // Enforce consistent indentation (indent from TSLint)
     '@typescript-eslint/indent': 'off',
 
-    // Require that interface names be prefixed with I (interface-name from TSLint)
-    '@typescript-eslint/interface-name-prefix': 'error',
-
     // Require a specific member delimiter style for interfaces and type literals
     '@typescript-eslint/member-delimiter-style': 'off',
 
