@@ -1,11 +1,7 @@
-
 /* eslint-disable no-undef */
 
 module.exports = {
-  'plugins': [
-    'jsx-a11y',
-    'react'
-  ],
+  'plugins': ['jsx-a11y', 'react'],
 
   'parserOptions': {
     'ecmaFeatures': {
@@ -14,28 +10,33 @@ module.exports = {
   },
 
   'rules': {
-
     // enforce emojis are wrapped in and provide screenreader access
     'jsx-a11y/accessible-emoji': 'error',
 
     // enforce all elements that require alternative text have meaningful information for user
-    'jsx-a11y/alt-text': ['error', {
-      'elements': ['img', 'object', 'area', 'input[type="image"]'],
-      'img': [],
-      'object': [],
-      'area': [],
-      'input[type="image"]': []
-    }],
+    'jsx-a11y/alt-text': [
+      'error',
+      {
+        'elements': ['img', 'object', 'area', 'input[type="image"]'],
+        'img': [],
+        'object': [],
+        'area': [],
+        'input[type="image"]': []
+      }
+    ],
 
     // enforce all anchors to contain accessible content
     'jsx-a11y/anchor-has-content': ['error', { 'components': [] }],
 
     // enforce all anchors are valid, navigable elements
-    'jsx-a11y/anchor-is-valid': ['error', {
-      'components': ['Link'],
-      'specialLink': [],
-      'aspects': ['noHref', 'invalidHref', 'preferButton']
-    }],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        'components': ['Link'],
+        'specialLink': [],
+        'aspects': ['noHref', 'invalidHref', 'preferButton']
+      }
+    ],
 
     // enforce elements with aria-activedescendant are tabbable
     'jsx-a11y/aria-activedescendant-has-tabindex': 'error',
@@ -71,17 +72,29 @@ module.exports = {
     'jsx-a11y/interactive-supports-focus': 'error',
 
     // enforce that <label> elements have the htmlFor prop
-    'jsx-a11y/label-has-for': ['error', { 'components': ['label'] }],
+    'jsx-a11y/label-has-associated-control': [
+      'error',
+      {
+        'labelComponents': [],
+        'labelAttributes': [],
+        'controlComponents': [],
+        'assert': 'both',
+        'depth': 25
+      }
+    ],
 
     // enforce lang attribute has a valid value
     'jsx-a11y/lang': 'error',
 
     // enforces that <audio> and <video> elements must have a <track> for captions
-    'jsx-a11y/media-has-caption': ['error', {
-      'audio': [],
-      'video': [],
-      'track': []
-    }],
+    'jsx-a11y/media-has-caption': [
+      'error',
+      {
+        'audio': [],
+        'video': [],
+        'track': []
+      }
+    ],
 
     // enforce that onMouseOver/onMouseOut are accompanied by onFocus/onBlur for keyboard-only users
     'jsx-a11y/mouse-events-have-key-events': 'error',
@@ -94,41 +107,49 @@ module.exports = {
     'jsx-a11y/no-autofocus': ['error', { 'ignoreNonDOM': true }],
 
     // enforce distracting elements are not used
-    'jsx-a11y/no-distracting-elements': ['error', {
-      'elements': ['marquee', 'blink']
-    }],
+    'jsx-a11y/no-distracting-elements': [
+      'error',
+      {
+        'elements': ['marquee', 'blink']
+      }
+    ],
 
     // interactive elements should not be assigned non-interactive roles
-    'jsx-a11y/no-interactive-element-to-noninteractive-role': ['error', {
-      'tr': ['none', 'presentation']
-    }],
+    'jsx-a11y/no-interactive-element-to-noninteractive-role': [
+      'error',
+      {
+        'tr': ['none', 'presentation']
+      }
+    ],
 
     // non-interactive elements should not be assigned mouse or keyboard event listeners
-    'jsx-a11y/no-noninteractive-element-interactions': ['error', {
-      'handlers': [
-        'onClick',
-        'onMouseDown',
-        'onMouseUp',
-        'onKeyPress',
-        'onKeyDown',
-        'onKeyUp'
-      ]
-    }],
+    'jsx-a11y/no-noninteractive-element-interactions': [
+      'error',
+      {
+        'handlers': ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp']
+      }
+    ],
 
     // non-interactive elements should not be assigned interactive roles
-    'jsx-a11y/no-noninteractive-element-to-interactive-role': ['error', {
-      'ul': ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
-      'ol': ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
-      'li': ['menuitem', 'option', 'row', 'tab', 'treeitem'],
-      'table': ['grid'],
-      'td': ['gridcell']
-    }],
+    'jsx-a11y/no-noninteractive-element-to-interactive-role': [
+      'error',
+      {
+        'ul': ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        'ol': ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        'li': ['menuitem', 'option', 'row', 'tab', 'treeitem'],
+        'table': ['grid'],
+        'td': ['gridcell']
+      }
+    ],
 
     // tabIndex should only be declared on interactive elements
-    'jsx-a11y/no-noninteractive-tabindex': ['error', {
-      'tags': [],
-      'roles': ['tabpanel']
-    }],
+    'jsx-a11y/no-noninteractive-tabindex': [
+      'error',
+      {
+        'tags': [],
+        'roles': ['tabpanel']
+      }
+    ],
 
     // enforce usage of onBlur over onChange on select menus for accessibility
     'jsx-a11y/no-onchange': 'off',
@@ -138,16 +159,12 @@ module.exports = {
 
     // enforce that non-interactive, visible elements (such as <div>) that have
     // click handlers use the role attribute
-    'jsx-a11y/no-static-element-interactions': ['error', {
-      'handlers': [
-        'onClick',
-        'onMouseDown',
-        'onMouseUp',
-        'onKeyPress',
-        'onKeyDown',
-        'onKeyUp'
-      ]
-    }],
+    'jsx-a11y/no-static-element-interactions': [
+      'error',
+      {
+        'handlers': ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp']
+      }
+    ],
 
     // enforce that elements with ARIA roles must have all required attributes for that role
     'jsx-a11y/role-has-required-aria-props': 'error',
